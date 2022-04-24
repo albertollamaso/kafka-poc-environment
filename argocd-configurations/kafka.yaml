@@ -11,7 +11,7 @@ spec:
     path: helm-charts/kafka
   destination:
     name: in-cluster
-    namespace: applications
+    namespace: kafka
   syncPolicy:
     automated:
       selfHeal: true
