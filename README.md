@@ -17,6 +17,12 @@ kcat -b localhost:9092 -t new_topic -P
 
 ```
 
+From a container:
+
+```
+kcat -b kafka-cp-kafka-headless.kafka -t new_topic -P
+
+```
 
 ### Consumer Mode
 
@@ -30,7 +36,12 @@ You can supply kcat with a broker (-b) and a topic (-t) and view see its content
 kcat -b localhost:9092 -t new_topic -C
 ```
 
+From a container:
 
+```
+kcat -b kafka-cp-kafka-headless.kafka  -t new_topic -C
+
+```
 
 
 
