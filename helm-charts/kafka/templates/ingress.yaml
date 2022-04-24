@@ -12,6 +12,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: {{ template "cp-kafka.fullname" . }}
+                name: {{ template "cp-kafka.fullname" . }}-headless
                 port:
                   number: 9092
