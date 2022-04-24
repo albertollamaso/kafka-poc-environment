@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/albertollamaso/kafka-poc-environment.git
     targetRevision: main
-    path: helm-charts/app
+    path: helm-charts/kafka
   destination:
     name: in-cluster
     namespace: applications
