@@ -1,17 +1,17 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: {{ template "cp-kafka.fullname" . }}
+  name: kafka-ingress
 spec:
   ingressClassName: nginx
   rules:
-    - host: {{ template "cp-kafka.fullname" . }}.test
+    - host: kafka.test
       http:
         paths:
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: {{ template "cp-kafka.fullname" . }}-headless
+                name: kafka-cp-kafka-headless
                 port:
                   number: 9092
